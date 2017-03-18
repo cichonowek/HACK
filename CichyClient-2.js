@@ -1,0 +1,12 @@
+function newLevel(){Xezefunige()}var Qiyetinofo; var ctx = com.mojang.minecraftpe.MainActivity.currentMainActivity.get();function dip2px(dips){var ctx=com.mojang.minecraftpe.MainActivity.currentMainActivity.get();return Math.ceil(dips*ctx.getResources().getDisplayMetrics().density)}/*Made_by_Elvin_MCPE_GUI_MAKER_Download_on_playstore*/function Xezefunige(){var activity=com.mojang.minecraftpe.MainActivity.currentMainActivity.get();activity.runOnUiThread(new java.lang.Runnable({run:function(){try{var Qiyetinofo=new android.widget.PopupWindow();var layout=new android.widget.RelativeLayout(activity);var button=new android.widget.Button(activity);button.setText("E");button.setOnClickListener(new android.view.View.OnClickListener({onClick:function(viewarg){Player.enchant(Player.getSelectedSlotId(), Enchantment.PROTECTION,4);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.AQUA_AFFINI,4);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.FEATHER_FALLING,4);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.DEPTH_STRIDER,4);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.KNOCKBACK,2);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.SHARPNESS,5);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.FLAME,1);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.FORTUNE,3);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.FIRE_ASPECT,2);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.DEPTH_STRIDER,0);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.EFFICIENCY,5);
+Player.enchant(Player.getSelectedSlotId(), Enchantment.INFINITY,1);}}));layout.addView(button);Qiyetinofo.setContentView(layout);Qiyetinofo.setWidth(android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);Qiyetinofo.setHeight(android.widget.RelativeLayout.LayoutParams.WRAP_CONTENT);Qiyetinofo.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.TRANSPARENT));Qiyetinofo.showAtLocation(activity.getWindow().getDecorView(),android.view.Gravity.LEFT|android.view.Gravity.CENTER,0,0);}catch(problem){print("Button could not be displayed: "+problem)}}}))}function leaveGame(){var activity=com.mojang.minecraftpe.MainActivity.currentMainActivity.get();activity.runOnUiThread(new java.lang.Runnable({run:function(){if(Qiyetinofo!=null){Qiyetinofo.dismiss();Qiyetinofo=null}}}))}
