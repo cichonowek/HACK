@@ -1,3 +1,5 @@
+if queue_on_teleport then queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/cichonowek/HACK/refs/heads/master/COM.lua")) end
+
 local CoreGui = game:GetService("CoreGui")
 
 if CoreGui:FindFirstChild("MobileActivatorGUI") then
