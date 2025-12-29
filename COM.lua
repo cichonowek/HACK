@@ -29,13 +29,13 @@ print("SetGarbageCollectionValue - Method Completed " .. str .. " Set To " .. to
 end
 
     SetGcValue("Ammo", 999)
-    SetGcValue("HeadshotMultiplier", 1000)
+    SetGcValue("HeadshotMultiplier", 100000)
     SetGcValue("MaxSpread", 0)
-    SetGcValue("FireRate", 0.2)
+    SetGcValue("FireRate", 0)
     SetGcValue("AmmoPerMag", 999)
     SetGcValue("ReloadTime", 0)
-SetGcValue("Health", 10000)
+SetGcValue("Health", 100000)
 SetGcValue("HealthPercent", 0)
-SetGcValue("HealingIncrement", 500)
-SetGcValue("HeadshotMultiplierIncrement", 5000)
+SetGcValue("HealingIncrement", 5000)
+SetGcValue("HeadshotMultiplierIncrement", 50000)
 
